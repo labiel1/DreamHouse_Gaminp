@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerBullet
+  - ENEMY
+  - GULI
+  - Enemy
+  - Boss
+  - ChargedBeam
+  - PLANE
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - Player
+  - PlayerBullet
+  - Enemies
+  - Respawn
+  - ChargedBeam
+  - Coins
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3514405715
+    locked: 0
+  - name: Characters
+    uniqueID: 662011679
+    locked: 0
+  - name: Near
+    uniqueID: 2189753137
+    locked: 0
+  - name: Enemies
+    uniqueID: 971359229
+    locked: 0
+  - name: ChargedBeam
+    uniqueID: 3942754881
+    locked: 0
