@@ -20,7 +20,9 @@ public class uiManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         timer = delay;
+        
         StartCoroutine(Example());
+        Pause();
     }
 	
 	// Update is called once per frame
@@ -73,10 +75,10 @@ public class uiManager : MonoBehaviour {
     {
         if (CenaPlay == "Level3")
         {
-            print("Timer Imprime" + Time.time);
+          //  print("Timer Imprime" + Time.time);
             yield return new WaitForSeconds(60);
             NextScene();
-            print("Timer Aguarda" + Time.time);
+         //   print("Timer Aguarda" + Time.time);
         }
     }
 

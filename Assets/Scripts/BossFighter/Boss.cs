@@ -39,12 +39,28 @@ public class Boss : MonoBehaviour {
         healthBar.value = health;
     }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        // if it's a charged beam it does -2 damage
+        // otherwise just -1
+        // Debug.Log("Collision Enter  - Tag: " + col.gameObject.tag + " - Layer: " + col.gameObject.layer);
+        if (col.gameObject.tag == "ChargedBeam")
+            health -= 2;
+        else if (col.gameObject.layer == 10)
+        {
+           // anim.SetTrigger("Damaged");
+            health--;
+
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         // deal the player damage ! 
-        if (other.CompareTag("Player") && isDead == false) {
-            if (timeBtwDamage <= 0) {
-                camAnim.SetTrigger("shake");
+         if (other.CompareTag("PlayerBullet") && isDead == false) {
+       // if (other.gameObject.layer == 10) { 
+                if (timeBtwDamage <= 0) {
+               // camAnim.SetTrigger("shake");
                 other.GetComponent<Player>().health -= damage;
             }
         } 

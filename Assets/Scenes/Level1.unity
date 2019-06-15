@@ -12007,16 +12007,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 264638334298985926, guid: 8c92d3e65be1c814d89f457d1ea77a9f,
-        type: 3}
-      propertyPath: CenaPlay
-      value: Level1
-      objectReference: {fileID: 0}
-    - target: {fileID: 264638334298985926, guid: 8c92d3e65be1c814d89f457d1ea77a9f,
-        type: 3}
-      propertyPath: CenaNova
-      value: loadLevel2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c92d3e65be1c814d89f457d1ea77a9f, type: 3}
 --- !u!4 &1279101830 stripped

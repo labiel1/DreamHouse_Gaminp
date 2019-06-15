@@ -32,7 +32,7 @@ public class WalkingBallAI : MonoBehaviour {
         if (redimensionarhitBox == true)
         {
             hitBox = GetComponent<BoxCollider2D>();
-            hitBox.size = new Vector2(1.0f, 1.0f);  // Standard Sprite Size when uninitalized
+           // hitBox.size = new Vector2(1.0f, 1.0f);  // Standard Sprite Size when uninitalized
         }
 		// can't find this animator either, I've tried literally everything
 		// works the same exact way in the bee
@@ -73,7 +73,7 @@ public class WalkingBallAI : MonoBehaviour {
             if ((Time.time >= movingTime) && enemyActive)
             {
                 enemyMoving = true;
-                hitBox.size = new Vector2(0.2f,0.5f);
+            //    hitBox.size = new Vector2(0.2f,0.5f);
 
             }
             else if ((Time.time >= movingTime - 0.75f) && enemyActive)
@@ -137,7 +137,7 @@ public class WalkingBallAI : MonoBehaviour {
     {
         // if it's a charged beam it does -2 damage
         // otherwise just -1
-        Debug.Log("Collision Enter  - Tag: " + col.gameObject.tag + " - Layer: " + col.gameObject.layer);
+       // Debug.Log("Collision Enter  - Tag: " + col.gameObject.tag + " - Layer: " + col.gameObject.layer);
         if (col.gameObject.tag == "ChargedBeam")
             health -= 2;
         else if (col.gameObject.layer == 10)
@@ -149,7 +149,7 @@ public class WalkingBallAI : MonoBehaviour {
     }
     // Same for bee enemy, -2 for charged, -1 if buster
     void OnTriggerEnter2D(Collider2D col){
-        Debug.Log("Trigger Enter  - Tag: " + col.gameObject.tag + " - Layer: " + col.gameObject.layer); Debug.Log(col.gameObject.tag + " - " + col.gameObject.layer);
+      //  Debug.Log("Trigger Enter  - Tag: " + col.gameObject.tag + " - Layer: " + col.gameObject.layer); Debug.Log(col.gameObject.tag + " - " + col.gameObject.layer);
         if (col.gameObject.tag == "ChargedBeam")
 			health -= 2;
 		else if(col.gameObject.layer == 10){

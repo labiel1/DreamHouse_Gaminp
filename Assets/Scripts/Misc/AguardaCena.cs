@@ -16,7 +16,7 @@ public class AguardaCena : MonoBehaviour
     {
 
             print("Timer Imprime" + Time.time);
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(5);
             NextScene();
             print("Timer Aguarda" + Time.time);
 
